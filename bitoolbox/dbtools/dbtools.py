@@ -102,7 +102,7 @@ def df_to_gaia(self, table_name,
 
 
 def df_to_devel(self, table_name,
-                database='GAIA',
+                database='Devel',
                 schema='temporario',
                 if_exists='replace',
                 config_file=os.environ.get('bitoolbox_ini'),
@@ -120,5 +120,4 @@ def df_to_devel(self, table_name,
 
 
 DataFrame.to_bidb = df_to_mysql
-DataFrame.to_gaia = df_to_gaia
 DataFrame.to_devel = df_to_devel
