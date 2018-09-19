@@ -1,0 +1,8 @@
+unidecode
+pandas
+sqlalchemy
+pymysql
+sqlalchemy-vertica
+vertica-python
+psycopg2
+zeep
