@@ -1,8 +1,5 @@
 # Arquivo de ajuda para lidar com a VM Python
 
-Endereço:
-http://vm-tmb-bi01.servers
-
 
 ```
 export REPO=package
@@ -37,4 +34,4 @@ chmod +x post-receive
 ```
 
 Precisa subistituir esse: $REPO
-ssh://thiagopinto@vm-tmb-bi01.servers/data/git.repos/$REPO.git
+https://github.com/madpin/bitoolbox

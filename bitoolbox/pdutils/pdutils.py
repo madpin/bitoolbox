@@ -23,16 +23,12 @@ def fill_grouped(df_input, group_fields,
 
     indexer_last = df.groupby(group_fields, as_index=False).nth(-1).index
     indexer_first = df.groupby(group_fields, as_index=False).nth(0).index
-    # print('indexer_last: ', indexer_last)
-    # print('indexer_first: ', indexer_first)
+
     for col in fill_columns:
-        # print('col: ', col)
         if(not df[col].isnull().any()):
             continue
         indexer_last_null = indexer_last[df.loc[indexer_last, col].isnull()]
         indexer_first_null = indexer_first[df.loc[indexer_first, col].isnull()]
-        # print('indexer_last_null: ', indexer_last_null)
-        # print('indexer_first_null: ', indexer_first_null)
 
         first_not_null_val = -999
         last_not_null_val = -998

@@ -61,15 +61,6 @@ def get_vertica_engine(database, schema=False, config_file=os.environ.get('bitoo
     return engine
 
 
-
-
-def get_gaia_engine(schema='temporario', database='GAIA'):
-    return get_engine(database, schema=schema)
-
-
-def get_devel_engine(schema='temporario', database='DEVEL'):
-    return get_engine(database, schema=schema)
-
 # Monkey patching pandas DataFrame.
 def df_to_mysql(self, table_name,
                 database,
@@ -93,7 +84,7 @@ def df_to_mysql(self, table_name,
 
 
 def df_to_gaia(self, table_name,
-               database='GAIA',
+               database='Devel',
                schema='temporario',
                if_exists='replace',
                config_file=os.environ.get('bitoolbox_ini'),

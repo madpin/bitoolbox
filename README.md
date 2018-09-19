@@ -7,14 +7,14 @@ pip install --trusted-host pypi.python.org [pacote]
 
 Para clonar esse repositório na rede da Catho:
 ```
-git -c http.sslVerify=false clone https://gitlab.com/cathobi/bitoolbox.git
+git -c http.sslVerify=false clone https://github.com/madpin/bitoolbox
 python .\bitoolbox\setup.py install
 pip install --trusted-host pypi.python.org -r .\bitoolbox\requirements.txt
 ```
 
 Para instalar em um ambiente "normal":
 ```
-pip install --upgrade git+https://gitlab.com/cathobi/bitoolbox.git
+pip install --upgrade git+https://github.com/madpin/bitoolbox
 ```
 
 ## Datetools
@@ -67,7 +67,7 @@ Grupo de funções para gerenciar o Tracksale.
 ## Autores
 
 * **Thiago MadPin** - trabalho inicial
-* Equipe de BI da Catho - manutencao e novas features
+
 
 Ps: Se já tiver um git e quiser configurar o SSL:
 ```

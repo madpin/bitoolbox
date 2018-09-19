@@ -8,9 +8,9 @@ def read(fname):
 
 setup(
     name='bitoolbox',
-    version='0.3.2',
+    version='0.4.0',
     author='Thiago MadPin',
-    author_email='thiago.pinto@catho.com',
+    author_email='madpin@gmail.com',
     description="A toolbox for BI purpouses",
     packages=[
         'bitoolbox',

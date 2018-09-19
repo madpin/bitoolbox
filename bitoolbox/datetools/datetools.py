@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Funcionalidades relacionadas com Omniture."""
+"""Dates Tools"""
 
 
 def get_dates_list(date1, date2):

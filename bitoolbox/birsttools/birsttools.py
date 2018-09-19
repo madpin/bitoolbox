@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Funcionalidades relacionadas ao birst"""
+"""Birst Tools"""
 
 import os
 import configparser as cp
 
 
 spaces = {
-    'catho_bi': '1b0f5f17-cd12-41b5-b490-33b530986b32',
-    'CathoBI': '1b0f5f17-cd12-41b5-b490-33b530986b32',
-    'shadow': '978aa613-6b29-4546-a6e8-a66d77c88478',
-    'Catho_BI_Shadow': '978aa613-6b29-4546-a6e8-a66d77c88478'
+    'space_one': '1b3f1f17-cd12-41b5-b490-33b530986b32',
+    'space_two': '128aa613-6b29-6746-a6e8-a66d77c88478',
 }
 
 def get_client(config_file=os.environ.get('bitoolbox_ini')):
