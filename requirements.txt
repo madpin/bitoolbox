@@ -6,3 +6,4 @@ sqlalchemy-vertica
 vertica-python
 psycopg2
 zeep
+boto3

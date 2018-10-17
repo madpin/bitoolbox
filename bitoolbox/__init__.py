@@ -8,6 +8,8 @@ from bitoolbox.birsttools import birsttools
 from bitoolbox.platformtools import platformtools
 from bitoolbox.logtools import logtools
 from bitoolbox.tracksaletools import tracksaletools
+from bitoolbox.webtools import webtools
+from bitoolbox.geotools import geotools
 
 from bitoolbox.datetools.datetools import diff_in_s
 

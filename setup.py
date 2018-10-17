@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='bitoolbox',
-    version='0.4.0',
+    version='0.5.1',
     author='Thiago MadPin',
     author_email='madpin@gmail.com',
     description="A toolbox for BI purpouses",
@@ -23,6 +23,8 @@ setup(
         'bitoolbox.platformtools',
         'bitoolbox.logtools',
         'bitoolbox.tracksaletools',
+        'bitoolbox.webtools',
+        'bitoolbox.geotools',
     ],
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     install_requires=[
