@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'bitoobox'
+NAME = 'bitoolbox'
 DESCRIPTION = 'Many tools that I need im my carrer'
 URL = 'https://github.com/madpin/bitoolbox'
 EMAIL = 'madpin@gmail.com'
