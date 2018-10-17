@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='bitoolbox',
-    version='0.5.1',
+    version='0.5.2',
     author='Thiago MadPin',
     author_email='madpin@gmail.com',
     description="A toolbox for BI purpouses",
