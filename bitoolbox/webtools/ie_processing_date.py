@@ -38,7 +38,6 @@ class Appointment(object):
     def cur_app_date_str(self):
         if(self._cur_app_date_str is not None):
             return self._cur_app_date_str
-        print('cur_app_date_str')
 
         tds = self._soup.find(
             'article', {'class': 'content-body__sections__main'}
@@ -55,7 +54,6 @@ class Appointment(object):
     def cur_date_str(self):
         if(self._cur_date_str is not None):
             return self._cur_date_str
-        print('cur_date_str')
         ps = self._soup.find_all('p')
         
         for key in range(len(ps)):
@@ -70,7 +68,6 @@ class Appointment(object):
     def cur_app_date(self):
         if(self._cur_app_date is not None):
             return self._cur_app_date
-        print('cur_app_date')
         self._cur_app_date = datetime.strptime(self.cur_app_date_str, '%d %B %Y')
         return self._cur_app_date
 
@@ -78,7 +75,6 @@ class Appointment(object):
     def cur_date(self):
         if(self._cur_date is not None):
             return self._cur_date
-        print('cur_date')
         self._cur_date = datetime.strptime(self.cur_date_str, '%d %B %Y')
         return self._cur_date
 
@@ -87,7 +83,6 @@ class Appointment(object):
     def date_diff(self):
         if(self._date_diff is not None):
             return self._date_diff
-        print('date_diff')
         self._date_diff = (self.cur_date - self.cur_app_date).days
         return self._date_diff
 
@@ -95,6 +90,5 @@ class Appointment(object):
     def predict_date(self):
         if(self._predict_date is not None):
             return self._predict_date
-        print('predict_date')
         self._predict_date = self._appointment_date + timedelta(days=self.date_diff)
         return self._predict_date
