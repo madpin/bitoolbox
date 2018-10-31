@@ -274,10 +274,11 @@ def sqlite_get_kv(status_keys,
                   status_key_column,
                   status_value_column,
                   status_table)
-    list_return = []
-    for row in resp:
-        list_return.append(row[1])
-    return list_return
+    try:
+        return resp[0][1]
+    except:
+        return 
+    
 
 
 def sqlite_get_kvs_dict(status_keys,
